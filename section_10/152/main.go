@@ -19,6 +19,7 @@ func main() {
 	//go keyword or go routines helps in running the functions or statements in parallel aka concurrency
 	//go greet("Hello how are you?")
 	//go greet("Hello why not your?")
+
 	done := make(chan bool)
 	go slowGreet("Hchal nikal?", done)
 	go greet("Hteri maa ki")
